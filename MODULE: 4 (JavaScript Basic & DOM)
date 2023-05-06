@@ -1,0 +1,280 @@
+MODULE: 4 (JavaScript Basic & DOM)
+
+
+
+•	What is JavaScript?
+
+JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.
+Javascript can do also animation and make notifiacation bar also .
+
+
+•	What is the use of IsNaN function?
+
+The isNaN () function is used to check whether a given value is an illegal number or not. It returns true if value is a NaN else returns false.  in other words isNaN() converts the value to a numberbefore testing it.
+
+
+•	What is negative Infinity?
+
+The negative infinity in JavaScript is a constant value which is used to represent a value which is the lowest available. This means that no other number is lesser than this value.
+
+•	Which company developed JavaScript?
+
+JavaScript was invented by Brendan Eich in 1995.
+It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+
+
+•	What are undeclared and undefined variables?
+
+A variable is undeclared if it has not been declared with an appropriate keyword .A variable is undefined if it hasn't been assigned a value.
+
+•	Write the code for adding new elements dynamically? document.createElement("<tagName>") 
+
+•	What is the difference between ViewState and SessionState?
+
+The basic difference between these two is that the ViewState is to manage state at the client’s end, making state management easy for end-user while SessionState manages state at the server’s end, making it easy to manage content from this end too.
+
+
+•	What is === operator?
+
+The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result.
+
+
+
+•	How can the style/class of an element be changed?
+
+The class name is used as a selector in HTML which helps to give some value to the element attributes.
+
+The document.getElementById() method is used to return the element in the document with the
+
+“id” attribute and the “className” attribute can be used to
+
+change/append the class of the element.
+
+
+
+•	How to read and write a file using JavaScript?
+
+The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. The file is read using the fs.readFile() function, which is an inbuilt method.
+This technique reads the full file into memory and stores it in a buffer.
+
+
+
+•	What are all the looping structures in JavaScript? for - loops through a block of code a number of times for/in - loops through the properties of an object for/of - loops through the values of an iterable object
+while - loops through a block of code while a specified condition is true do/while - also loops through a block of code while a specified condition is true 
+
+
+•	How can you convert the string of any base to an integer in JavaScript?
+
+In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or value to an integer value itself.
+
+This function returns an integer of the base which is specified in the second argument of the parseInt() function.
+
+Syntax:
+
+parseInt(Value, radix)
+
+
+
+•	What is the function of the delete operator?
+
+delete operator The delete operator removes a property from an object.
+
+
+
+•	What are all the types of Pop up boxes available in JavaScript?
+
+There are journal three types of pop up boxes are available in javascript
+
+Prompt box.
+Alert box.
+Confirm box.  
+
+
+
+•	What is the use of Void (0)?
+
+void (0) can be used when we don't want to refresh or load a new page in the browser on clicking a hyperlink.
+
+
+•	How can a page be forced to load another page in JavaScript?
+
+Step 1: Create a file named index.html. Add a heading and two buttons to it. One button forcefully loads a page with a live URL and the other button loads a local HTML page.
+
+Step 2: Create a file named newPage.html. This is the local HTML page that would be loaded by Javascript. 
+•	What are the disadvantages of using innerHTML in JavaScript?
+
+There is no append support without reparsing the whole innerHTML. This makes changing innerHTML directly very slow.
+
+•	Create a sliders using JavaScript
+
+HTML PORTION
+
+<div class="container">
+  
+  <!-- Full-width images with caption text -->
+  <div class="image-sliderfade fade">
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Image caption 1</div>
+  </div>
+  
+  <div class="image-sliderfade fade">
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Image caption 2</div>
+  </div>
+  
+  <div class="image-sliderfade fade">
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Image caption 3</div>
+  </div>
+  
+  <div class="image-sliderfade fade">
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Image caption 4</div>
+  </div>
+  
+</div>
+<br>
+  
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+
+
+
+CSS PORTION
+* 
+{
+  box-sizing: border-box;
+}
+body 
+{
+  font-family: Verdana, sans-serif;
+}
+  
+.image-sliderfade 
+{
+  display: none;
+}
+  
+img 
+{
+  vertical-align: middle;
+}
+  
+/* Slideshow container */
+.container 
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+  
+/* Caption text */
+.text 
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 20px 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40%;
+  background: rgba(0, 0, 0, .7);
+  text-align: left;
+}
+  
+/* The dots/bullets/indicators */
+.dot 
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 5 px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+}
+  
+.active 
+{
+  border-color: #666;
+}
+  
+/* Animation */
+.fade 
+{
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+@keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+  .text {font-size: 11px}
+}
+
+JAVASCRIPT PORTION 
+
+
+var slideIndex = 0;
+showSlides(); // call showslide method
+   
+function showSlides()
+{
+    var i;
+  
+    // get the array of divs' with classname image-sliderfade
+    var slides = document.getElementsByClassName("image-sliderfade"); 
+      
+    // get the array of divs' with classname dot
+    var dots = document.getElementsByClassName("dot"); 
+  
+    for (i = 0; i < slides.length; i++) {
+        // initially set the display to 
+        // none for every image.
+        slides[i].style.display = "none"; 
+    }
+   
+     // increase by 1, Global variable
+    slideIndex++; 
+   
+     // check for boundary
+    if (slideIndex > slides.length) 
+    {
+        slideIndex = 1;
+    }
+   
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.
+                            replace(" active", "");
+    }
+   
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  
+    // Change image every 2 seconds
+    setTimeout(showSlides, 2000); 
+}
