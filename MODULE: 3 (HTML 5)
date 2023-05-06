@@ -1,0 +1,96 @@
+1.	What are the new tags added in HTML5?
+
+Html new added tags are 
+
+<audio>
+It defines sound content.
+
+<embed>
+It defines a container for external files/application/media.
+
+<source>
+It defines multiple media resources for the media elements.
+
+<track>
+It defines text tracks for <audio> and <video> files.
+
+<video>
+It defines video content within HTML document.
+
+<datalist>
+It represent predefined list for input <option> element.
+
+<output>
+It is used a container element to represent the output of a calculation or outcome of user action.
+
+<canvas>
+It is used to draw canvas.
+
+<data>
+It provides machine readable version of its data.
+
+<dialog>
+It defines a window or a dialog box.
+
+<summary>
+It specifies a visible heading for <detailed> element.
+
+<svg>
+It is used to display shapes.
+
+<time>
+It is used to define a date/time.
+
+Etc
+
+
+2.	How to embed audio and video in a webpage?
+
+To  uplode video in web page 
+And put the code in Iframe. src
+
+Example…..
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6w67NOaRe-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+To  uplode video in web page
+
+<audio controls>
+  <source src="audiofile.name" type="audio/type">
+</audio>
+
+3.	Semantic element in HTML5?
+In HTML there are some semantic elements that can be used to define different parts of a web page
+•	<article>
+•	<aside>
+•	<details>
+•	<figcaption>
+•	<figure>
+•	<footer>
+•	<header>
+•	<main>
+•	<mark>
+•	<nav>
+•	<section>
+•	<summary>
+•	<time>
+•	<form>
+•	<table>
+•	<article>
+
+
+
+
+
+
+
+
+4.	Canvas and SVG tags?
+
+
+Canvas is raster based and composed of pixel.
+<canvas></canvas>
+
+
+SVG is vector based and composed of shapes.
+<svg></svg>
